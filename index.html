@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+
+function arrayToObject(arr) {
+var obj = {};
+arr.forEach(function(num) {
+if (obj[num]) {
+obj[num]++;
+} else {
+obj[num] = 1;
+}
+});
+return obj;
+}
+var numbers = [1, 2, 2, 3];
+var numbers2 = [9,9,9,99];
+var numbers3 = [4, 3, 2, 1]
+var result = arrayToObject(numbers);
+var result2 = arrayToObject(numbers2);
+var result3 = arrayToObject(numbers3);
+console.log(result);
+console.log(result2);
+console.log(result3);
+
+
+    </script>
+</body>
+</html>
